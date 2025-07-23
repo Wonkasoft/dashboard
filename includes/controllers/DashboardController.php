@@ -5,7 +5,8 @@ class DashboardController {
     private $projectModel;
 
     public function __construct() {
-        $this->taskModel = new Task();
+        $db = Database::getInstance()->getConnection();
+        $this->taskModel = new Task($db);
         $this->projectModel = new Project();
     }
 

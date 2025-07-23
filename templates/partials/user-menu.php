@@ -39,7 +39,6 @@
         <ul class="dropdown-menu">
             <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
             <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">0</span></a></li>
-            <li><a href="../phpmyadmin" target="_blank"><i class="fa fa-gear"></i> PHPmyAdmin</a></li>
             <li class="divider"></li>
             <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
         </ul>

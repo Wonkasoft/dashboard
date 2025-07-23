@@ -1,5 +1,5 @@
 <?php
-// index.php - Clean and refactored dashboard
+
 require_once 'config.php';
 require_once INCLUDES_PATH . '/Database.php';
 require_once INCLUDES_PATH . '/models/Task.php';
@@ -72,39 +72,7 @@ require_once TEMPLATES_PATH . '/components/stats-card.php';
                 ?>
             </div>
 
-            <!-- Projects Section -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <i class="fa fa-bar-chart-o"></i> Development Projects
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <?php foreach ($dashboardData['projects'] as $project): ?>
-                                    <div class="col-lg-4 project-item">
-                                        <h3><?php echo htmlspecialchars($project['name']); ?></h3>
-                                        <div class="btn-group" role="group">
-                                            <a href="<?php echo $project['path']; ?>" 
-                                               class="btn btn-sm btn-primary">View Site</a>
-                                            <a href="<?php echo $project['admin_path']; ?>" 
-                                               class="btn btn-sm btn-info">Admin Login</a>
-                                            <a href="#" class="btn btn-sm btn-danger"
-                                               onclick="return confirm('Are you sure you want to delete this project?')">
-                                               Delete
-                                            </a>
-                                        </div>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Dashboard Widgets -->
+            <!-- Dashboard Widgets (Activity, Transactions, etc.) -->
             <?php include TEMPLATES_PATH . '/partials/dashboard-widgets.php'; ?>
         </div>
     </div>
