@@ -1,0 +1,29 @@
+/* Custom styles for cleaner look */
+.project-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.project-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.stats-card {
+    transition: transform 0.2s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.announcement-heading {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.announcement-text {
+    font-size: 1.1em;
+    margin: 0;
+}
