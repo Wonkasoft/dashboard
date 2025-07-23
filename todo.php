@@ -63,7 +63,7 @@ $completedTasks = $controller->getCompletedTasks();
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
-                            <tr><td colspan="3" class="text-center">No open tasks!</td></tr>
+                            <tr><td colspan="4" class="text-center">No open tasks!</td></tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
@@ -86,7 +86,7 @@ $completedTasks = $controller->getCompletedTasks();
                                 </tr>
                              <?php endforeach; ?>
                         <?php else: ?>
-                            <tr><td colspan="3" class="text-center">No completed tasks!</td></tr>
+                            <tr><td colspan="4" class="text-center">No completed tasks!</td></tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
